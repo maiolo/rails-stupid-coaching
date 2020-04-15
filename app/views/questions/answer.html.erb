@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="your_question"> 
+    <h4>Your message:</h4>
+    <p>  <%= @question %> </p>
+  </div>
+
+  <div class="coach">
+  <h3>Coach</h3>
+    <% if @question == "I am going to work" %>
+      <p><em><%= @coach[0] %></p></em>
+    <%elsif @question[-1] == '?' %>
+      <p><em><%= @coach[1] %></p></em>
+    <% else %>
+    <p><em><%= @coach[2] %></p></em>
+    <% end %>
+
+  </div>
+
+  <%= link_to  "ask again", ask_path, class: "btn btn-primary" %>
+</div>
