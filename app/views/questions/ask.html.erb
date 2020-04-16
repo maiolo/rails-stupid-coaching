@@ -1,6 +1,11 @@
-<div class='container'>
-  <form class='form-inline' action='/answer'>
-    <input class='form-control' type='text' name='question' placeholder="type your question">
-    <input class='btn btn-primary' type='submit' value="ASK!">
+<div class='container question'>
+  <form action='/answer'>
+    <label for="question">Ask your coach anything:</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" name='question' placeholder="Type your question">
+      <div class="input-group-append">
+        <button class="btn btn-info" type="submit">Ask</button>
+      </div>
+    </div>
   </form>
-</div>
+</div>  

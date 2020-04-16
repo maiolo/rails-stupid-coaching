@@ -2,38 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .container {
-  padding: 30px;
+
   margin: auto;
   text-align: center;
 }
 
-.form-inline {
-  display: block;
+.question {
+  padding: 0px 25%;
+}
+
+label{
+  float: left;
 }
 
 .your_question {
   background-color: white;
-  width: 500px;
+  width: 400px;
   margin: 20px auto;
-  padding: 10px 30px;
-  text-align: center;
-  font-weight: lighter;
-  font-size: 25px;
-  box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.5);
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 18px;
+  border-left: 10px solid #DDDDDD;
 }
 
-.your_question > h4 {
+p { 
+  margin-bottom: 1px;
+}
+
+.your_question > footer {
   text-align: left;
 }
 
 .coach {
   width: 400px;
-  padding: 5px 10px;
-  background-color: rgb(255, 249, 191);
+  padding: 10px 20px;
+  background-color:#FFFFE1;
   margin: auto;
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
+  border-left: 10px solid #DDDDDD;
 }
 
 a { 
